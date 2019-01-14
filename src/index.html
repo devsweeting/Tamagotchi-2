@@ -12,16 +12,64 @@
       <form class="create-pet">
         <div class="form-group">
           <label for="name">Enter your pet's name</label>
-          <input id="name" type="number">
+          <input id="name" type="text" value="Snuggs">
         </div>
         <label for="sex">Select your pet:</label>
-      <select id="sex">
-        <option value="0"></option>
-        <option value="1">Hamster</option>
-        <option value="2">Cat</option>
-        <option value="3">Dog</option>
-      </select>
+        <select id="sex">
+          <option value="0"></option>
+          <option value="1">Hamster</option>
+          <option value="2">Cat</option>
+          <option value="3">Dog</option>
+        </select>
+        <button type="submit" name="button" class="btn btn-success create-pet">Create Pet</button>
       </form>
+
+      <div class="card">
+          <div class="pet-output">
+            <h3>Your Pet Details:</h3>
+            <p id="pet-name"></p>
+              <div class="row">
+                <div class="col-md-3">
+                  <p id="pet-hunger"></p>
+                  <button type="click" name="button" class="btn btn-success" id="feed-pet">Feed Pet</button>
+                </div>
+                <div class="col-md-3">
+                  <p id="pet-water"></p>
+                  <button type="click" name="button" class="btn btn-success" id="water-pet">Water Pet</button>
+                </div>
+                <div class="col-md-3">
+                  <p id="pet-waste"></p>
+                  <button type="click" name="button" class="btn btn-success" id="clean-pet">Clean Pet Waste</button>
+                </div>
+
+                <div class="col-md-3">
+                  <p id="pet-clean"></p>
+                  <button type="click" name="button" class="btn btn-success" id="wash-pet">Wash Pet</button>
+                </div>
+              </div>
+              <div class="row second-row">
+                <div class="col-md-3">
+                  <p id="pet-exercise"></p>
+                  <button type="click" name="button" class="btn btn-success" id="exercise-pet">Exercise Pet</button>
+                </div>
+                <div class="col-md-3">
+                  <p id="pet-sleep"></p>
+                  <button type="click" name="button" class="btn btn-success" id="sleep-pet">Put Pet to Sleep</button>
+                </div>
+                <div class="col-md-3">
+                  <p id="pet-love"></p>
+                  <button type="click" name="button" class="btn btn-success" id="love-pet">Love Pet</button>
+                </div>
+                <div class="col-md-3">
+                  <p id="pet-sass"></p>
+                </div>
+              </div>
+            <!-- output -->
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="dead"></div>
     </div>
   </body>
 </html>
