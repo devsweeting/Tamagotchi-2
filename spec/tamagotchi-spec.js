@@ -15,7 +15,7 @@ describe('Pet', function(){
   it('should test if we can create a new pet object', function(){
     const name = "Sally";
     let newAnimal = new Pet(name);
-    expect(newAnimal.food).toEqual(10);
+    expect(newAnimal.hunger).toEqual(10);
   });
 
   it('should check to see if hunger level drops to 9 after 10 seconds', function() {
@@ -23,6 +23,20 @@ describe('Pet', function(){
     expect(snuggs.love).toEqual(7);
   });
 
+  it('should check to see if hunger level increases by 5 after feeding', function() {
+    jasmine.clock().tick(20001);
+    snuggs.feedPet();
+    expect(snuggs.hunger).toEqual(12);
+  });
 
+  it('should check to see if saas level increases approriately', function() {
+    jasmine.clock().tick(50001);
+    expect(snuggs.sass).toEqual(7);
+  });
+
+  it('should check to see if pet dies of anything', function() {
+    jasmine.clock().tick(100001);
+    expect(snuggs.deathOfPet()).toEqual('Your pet committed suicide.');
+  });
 
 });
