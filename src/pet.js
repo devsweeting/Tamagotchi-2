@@ -4,7 +4,7 @@ class Pet {
   constructor(name){
 
     this.name = name,
-    this.hunger = 2,
+    this.hunger = 10,
     this.water = 10,
     this.waste = 10,
     this.clean = 10,
