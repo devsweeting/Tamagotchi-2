@@ -91,18 +91,25 @@ class Pet {
       console.log(this.alive);
       return "Your pet died of starvation.";
     } else if (this.water < -10){
+      this.alive = false;
       return "Your pet died of thirst.";
     } else if (this.waste > 20){
+      this.alive = false;
       return "Your pet died of infection.";
     } else if (this.clean < 0){
+      this.alive = false;
       return "Your pet is disgusting. You dont deserve a pet.";
     } else if (this.exercise < -10) {
+      this.alive = false;
       return "Your pet died of cardiac arrest.";
     } else if (this.sleep < -15) {
+      this.alive = false;
       return "Your pet died of sleep deprevation.";
     } else if (this.love < -20) {
+      this.alive = false;
       return "Your pet committed suicide.";
     } else if (this.sass > 20) {
+      this.alive = false;
       return "Your pet stole your credit card, your girl, and fled to the Caribbean.";
     } else {
       return "Your pet is alive!";
